@@ -6,7 +6,7 @@ public class ClassMethods {
 
     //Public method, can only be accessed via methods;
     public void thatMethod(){
-        System.out.println(" This a public method.")
+        System.out.println(" This a public method.");
     }
 
     // Static method;
@@ -17,7 +17,7 @@ public class ClassMethods {
     public static void main( String[]args){
 
 
-        thatMethod obj = new thatMethod();
+        ClassMethods obj = new ClassMethods();
         obj.thatMethod(); //Calling a public method;
 
 
