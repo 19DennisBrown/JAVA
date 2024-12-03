@@ -3,25 +3,26 @@
 package Inheritance;
 
 class Africa{
+    protected String title = "Origin of Man";
 
-    protected String name = "Largest continent";
     public void climate(){
-
-        System.out.println("Hot, humid and rainy.");
+        System.out.println("Hot, humid and rainy");
     }
 }
 
 class Kenya extends Africa{
 
-    private String dub = "Silicon Savannah";
-    public String getDub(){
-        return dub;
+    private String dubbed = "Silicon Savannah";
+
+    public String getDubbed(){
+        return dubbed;
     }
 
     public static void main(String[] args){
 
         Kenya newObj = new Kenya();
-        System.out.println(newObj.getDub());
+        newObj.climate();
+        System.out.println(newObj.title + " " + newObj.getDubbed());
     }
 }
 
