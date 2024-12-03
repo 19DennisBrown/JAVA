@@ -2,20 +2,27 @@
 
 package Inheritance;
 
-class Vehicle {
-protected String brand = "Ford";
-public void honk() {
-    System.out.println("Tuut, tuut!");
-}
+class Africa{
+
+    protected String name = "Largest continent";
+    public void climate(){
+
+        System.out.println("Hot, humid and rainy.");
+    }
 }
 
-class Car extends Vehicle {
-private String modelName = "Mustang";
-public static void main(String[] args) {
-    Car myFastCar = new Car();
-    myFastCar.honk();
-    System.out.println(myFastCar.brand + " " + myFastCar.modelName);
-}
+class Kenya extends Africa{
+
+    private String dub = "Silicon Savannah";
+    public String getDub(){
+        return dub;
+    }
+
+    public static void main(String[] args){
+
+        Kenya newObj = new Kenya();
+        System.out.println(newObj.getDub());
+    }
 }
 
 
