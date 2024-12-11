@@ -3,17 +3,17 @@
 
 abstract class People{
 
-    public abstract String walkingStyle();
+    public abstract void walkingStyle();
 
     public void population(){
-
+        
         System.out.println("Everywhere on earth.");
     }
 }
 
 class Men extends  People{
-    public String walkingStyle(){
-        return "Unique";
+    public void walkingStyle(){
+        System.out.println("Unique.");
     }
 
 }
