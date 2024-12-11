@@ -9,18 +9,21 @@ enum Level {
   
   public class Enums {
     public static void main(String[] args) {
-      Level myVar = Level.MEDIUM;
-  
-      switch(myVar) {
+      Level selectVal = Level.MEDIUM;
+
+      switch(selectVal){
+
         case LOW:
-          System.out.println("Low level");
+          System.out.println("At LOW level");
           break;
-        case MEDIUM:
-           System.out.println("Medium level");
-          break;
-        case HIGH:
-          System.out.println("High level");
-          break;
+        
+          case MEDIUM:
+            System.out.println("At MEDIUM level.");
+            break;
+
+          case HIGH:
+            System.out.println("At HIGH level.");
+            break;
       }
     }
   }
