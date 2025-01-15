@@ -22,6 +22,11 @@ public class LinkList{
         for(int n = 0; n<cars.size() ; n++){
             System.out.println(cars.get(n));
         }
+
+
+        for(String p : cars){
+            System.out.println("NEW WAY " + p);
+        }
         System.out.println("This is the first item in the linked list: "+ firstItem);
         System.out.println("The end______________________");
     }
